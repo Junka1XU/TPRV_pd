@@ -1,24 +1,24 @@
 #N canvas 835 523 714 304 10;
 #X obj 67 65 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X floatatom 82 88 5 0 0 0 - - -, f 5;
+-1 -1 12700 1;
+#X floatatom 82 88 5 0 0 0 - - -;
 #X obj 64 199 lerp -10 10;
-#X floatatom 101 135 5 0 0 0 - - -, f 5;
-#X floatatom 138 166 5 0 0 0 - - -, f 5;
-#X floatatom 64 267 5 0 0 0 - - -, f 5;
-#X obj 252 66 hsl 128 15 -10 10 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 8000 1;
-#X floatatom 267 89 5 0 0 0 - - -, f 5;
-#X floatatom 279 136 5 0 0 0 - - -, f 5;
-#X floatatom 309 167 5 0 0 0 - - -, f 5;
-#X floatatom 249 271 5 0 0 0 - - -, f 5;
+#X floatatom 101 135 5 0 0 0 - - -;
+#X floatatom 138 166 5 0 0 0 - - -;
+#X floatatom 64 267 5 0 0 0 - - -;
+#X obj 252 66 hsl 128 15 -5 5 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 267 89 5 0 0 0 - - -;
+#X floatatom 279 136 5 0 0 0 - - -;
+#X floatatom 309 167 5 0 0 0 - - -;
+#X floatatom 249 271 5 0 0 0 - - -;
 #X obj 249 199 norm -5 5;
 #X obj 459 150 norm -10 10;
 #X obj 459 196 lerp 2 0;
 #X obj 462 75 hsl 128 15 -20 20 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6500 1;
-#X floatatom 477 98 5 0 0 0 - - -, f 5;
-#X floatatom 459 268 5 0 0 0 - - -, f 5;
+-1 -1 0 1;
+#X floatatom 477 98 5 0 0 0 - - -;
+#X floatatom 459 268 5 0 0 0 - - -;
 #X text 261 12 Normalization;
 #X text 65 13 Interpolation;
 #X text 488 11 Mapping;
