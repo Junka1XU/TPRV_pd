@@ -1,25 +1,25 @@
-#N canvas 728 252 969 683 10;
-#X obj 126 144 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#N canvas 256 141 969 683 10;
+#X obj 126 144 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 126 215 vline~;
 #X obj 127 257 *~;
 #X obj 29 212 noise~;
 #X obj 82 304 *~;
 #X msg 126 193 1 5 \, 0 30 5;
-#X floatatom 553 153 5 0 0 0 - - -, f 5;
+#X floatatom 553 153 5 0 0 0 - - -;
 #X obj 533 125 hsl 128 15 1 1000 1 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6200 1;
+-1 -1 12700 1;
 #X obj 188 635 dac~;
 #X text 86 105 source signal;
 #X text 534 89 distance in meters;
 #X obj 530 240 swap 1;
 #X obj 530 262 /;
-#X floatatom 552 283 5 0 0 0 - - -, f 5;
+#X floatatom 552 283 5 0 0 0 - - -;
 #X text 367 14 REVERBERATION;
 #X obj 160 530 mix~;
 #X obj 243 533 mix~;
 #X obj 533 461 hsl 128 15 0 1 0 1 empty empty empty -2 -8 0 10 -262144
--1 -1 8816 1;
+-1 -1 5200 1;
 #X text 683 468 dry/wet mix;
 #X obj 530 316 clip 0 1;
 #X obj 530 218 / 10;
@@ -31,9 +31,10 @@
 #X obj 125 164 metro 300;
 #X obj 225 435 rev3~ 100 75 3000 90;
 #X obj 183 317 hsl 128 15 0 1 0 1 empty empty empty -2 -8 0 10 -262144
--1 -1 5800 1;
+-1 -1 12700 1;
 #X obj 155 357 pan~;
 #X text 190 282 pan left/right signal;
+#X floatatom 214 347 5 0 0 0 - - -;
 #X connect 0 0 26 0;
 #X connect 1 0 2 0;
 #X connect 1 0 2 1;
@@ -58,6 +59,7 @@
 #X connect 27 0 15 1;
 #X connect 27 1 16 1;
 #X connect 28 0 29 1;
+#X connect 28 0 31 0;
 #X connect 29 0 27 0;
 #X connect 29 0 15 0;
 #X connect 29 1 27 1;

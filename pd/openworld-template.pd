@@ -1,4 +1,4 @@
-#N canvas 55 240 1801 633 10;
+#N canvas 91 117 1801 633 10;
 #N canvas 475 437 395 449 network 0;
 #X msg 25 113 listen 3000;
 #X msg 58 150 listen 0;
@@ -29,7 +29,7 @@
 #X connect 14 0 9 0;
 #X restore 24 61 pd network;
 #X obj 206 76 r map;
-#X obj 206 104 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 206 104 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 347 105 r chest;
 #X obj 347 168 unpack f f f f f;
@@ -62,7 +62,7 @@
 level (in meters), f 18;
 #X text 1303 22 player status (walking \, swimming or diving) and velocity
 (in meters per seconds), f 25;
-#X obj 561 107 camera-vectors;
+#X obj 562 106 camera-vectors;
 #X obj 517 153 vec3;
 #X obj 600 153 vec3;
 #X obj 680 153 vec3;
@@ -90,7 +90,7 @@ level (in meters), f 18;
 #X text 1551 15 nearset animals (max 3 per type) : type (LAND WATER
 AIR) \, index (0 \, 1 \, 2) \, state (STROLL FLEE) \, position (x \,
 y \, z) \, occlusion (0 or 1), f 28;
-#N canvas 1159 412 450 300 minimap 0;
+#N canvas 1159 412 450 300 minimap 1;
 #X obj 40 25 inlet map;
 #X obj 97 70 select 0 1;
 #X obj 261 179 *~;
@@ -119,7 +119,7 @@ y \, z) \, occlusion (0 or 1), f 28;
 #X restore 206 342 pd minimap;
 #X obj 205 363 *~ 1;
 #X obj 837 528 dac~;
-#N canvas 410 306 654 300 chest 1;
+#N canvas 652 353 654 300 chest 0;
 #X obj 63 15 inlet nearest chest position XYZ;
 #X obj 298 14 camera-vectors;
 #X obj 116 43 vec3/sub;
@@ -163,10 +163,10 @@ y \, z) \, occlusion (0 or 1), f 28;
 #X connect 1 0 2 1;
 #X connect 2 0 3 0;
 #X connect 4 0 1 0;
-#X restore 657 445 pd underwater1;
-#X obj 657 466 *~ 1;
+#X restore 544 285 pd underwater1;
+#X obj 544 306 *~ 1;
 #X obj 517 224 unpack f f f;
-#N canvas 1022 343 722 479 music 0;
+#N canvas 287 176 722 479 music 0;
 #X msg 16 29 loop 0 41 1;
 #X obj 16 51 sampler1~ samples/cathedral-organ-Pixabay.wav 44100;
 #X obj 90 79 camera-vectors;
@@ -201,7 +201,7 @@ y \, z) \, occlusion (0 or 1), f 28;
 #X connect 13 0 16 0;
 #X connect 16 0 5 0;
 #X restore 1112 175 pd music maison;
-#X obj 837 487 special;
+#X obj 1084 218 special;
 #X connect 1 0 2 0;
 #X connect 2 0 52 0;
 #X connect 3 0 33 0;
@@ -239,17 +239,13 @@ y \, z) \, occlusion (0 or 1), f 28;
 #X connect 43 3 40 0;
 #X connect 45 0 48 0;
 #X connect 46 0 45 0;
-#X connect 48 0 64 1;
 #X connect 48 0 63 0;
+#X connect 48 0 64 1;
 #X connect 50 0 43 0;
 #X connect 52 0 53 0;
-#X connect 53 0 60 0;
 #X connect 55 0 56 0;
-#X connect 56 0 60 0;
 #X connect 57 0 58 0;
 #X connect 58 0 59 0;
 #X connect 60 0 61 0;
 #X connect 62 1 60 1;
 #X connect 63 0 64 0;
-#X connect 64 0 54 0;
-#X connect 64 1 54 1;
