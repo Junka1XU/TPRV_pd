@@ -115,7 +115,7 @@
 #X connect 16 0 3 0;
 #X restore 865 202 pd ambient sound;
 #X obj 563 570 *~ 1;
-#N canvas 2603 -428 1775 888 player 1;
+#N canvas 2603 -428 1775 888 player 0;
 #X obj 51 31 inlet camAltitude;
 #X obj 172 33 inlet fAltitude;
 #X obj 285 33 inlet walking;
@@ -199,7 +199,7 @@
 #X connect 34 0 9 0;
 #X connect 35 0 26 0;
 #X restore 192 137 pd waterWalking;
-#N canvas 2827 -182 1121 719 walking 1;
+#N canvas 2827 -182 1121 719 walking 0;
 #X obj 186 38 inlet camAltitude;
 #X obj 311 38 inlet walking;
 #X obj 414 40 inlet Wspeed;
