@@ -1,0 +1,13 @@
+Documentation de l'environnement sonore.
+
+Le fichier principal est openworld-final.pd, c'est lui qu'il faut ouvrir pour avoir le son.
+
+Dans l'ensemble, tout fonctionne sans condition.
+Nous avons eu du mal pour la spacialisation.
+Le son du détecteur de coffre pourrait être amélioré.
+
+Les sons et musiques proviennent tous de Pixabay ou de M.AUBERT.
+Ils sont dans le dossier samples.
+Les sons utilisés pour les animaux sont dans le sous-dossier Animals.
+
+Travail fait par Bryan Han et Junkai Xu.
