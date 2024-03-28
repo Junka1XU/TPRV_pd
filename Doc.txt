@@ -6,6 +6,11 @@ Dans l'ensemble, tout fonctionne sans condition.
 Nous avons eu du mal pour la spacialisation.
 Le son du détecteur de coffre pourrait être amélioré.
 
+Les patchs à part :
+- pour chaque animal : chien.pd, oiseau.pd, poisson.pd
+- pour la spatialisation : special.pd
+- pour l'effet sous l'eau : underwater2.pd
+
 Les sons et musiques proviennent tous de Pixabay ou de M.AUBERT.
 Ils sont dans le dossier samples.
 Les sons utilisés pour les animaux sont dans le sous-dossier Animals.
